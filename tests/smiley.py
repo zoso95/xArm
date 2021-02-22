@@ -18,7 +18,13 @@ eye_x = 10
 z_up = 0
 z_down = -18
 
+#(495, 420, 700, 64, 502)
+servo_coord = get_position(False)
+#(135, -3, -21)
 center_origin = get_position(True)
+
+print(servo_coord)
+print(center_origin)
 # y(+), x(inv), up(+)
 #movel(appro(pA, (30, 0, 0)), 1000)
 movel(appro(center_origin, (50, eye_x, z_up)), 1000)
